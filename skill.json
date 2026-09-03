@@ -1,0 +1,42 @@
+{
+  "name": "genpark-pre-purchase-return-fraud-propensity-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Pre-purchase return fraud propensity and wardrobing serial-returner risk scorer protecting merchant margins.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "merchant-commerce",
+  "tags": [
+    "gorgias-ai",
+    "yotpo",
+    "return-fraud",
+    "wardrobing",
+    "fraud-prevention"
+  ],
+  "inputs": {
+    "shopper_id": {
+      "type": "string"
+    },
+    "cart_items": {
+      "type": "array"
+    },
+    "historical_return_rate_pct": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "risk_assessment_id": {
+      "type": "string"
+    },
+    "fraud_propensity_score": {
+      "type": "number"
+    },
+    "risk_tier": {
+      "type": "string"
+    },
+    "fraud_evaluation_report_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
